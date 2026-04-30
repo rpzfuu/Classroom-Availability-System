@@ -2,6 +2,14 @@
 
 Classroom Availability System (CAS) adalah aplikasi web statis untuk menampilkan dan mengelola status ketersediaan ruangan kelas/laboratorium. Halaman publik dapat melihat status ruangan secara read-only, sedangkan admin dapat login dan mengubah status ruangan menjadi `Available` atau `Filled`.
 
+## Live Demo
+
+Aplikasi sudah dapat diakses melalui GitHub Pages:
+
+```text
+https://rpzfuu.github.io/Classroom-Availability-System/
+```
+
 ## Fitur
 
 - Halaman publik status ruangan: `index.html`
@@ -51,7 +59,23 @@ CAS/
 
 ## Cara Menjalankan
 
-Pastikan folder project berada di direktori web server. Pada konfigurasi saat ini:
+### Online
+
+Buka link GitHub Pages berikut:
+
+```text
+https://rpzfuu.github.io/Classroom-Availability-System/
+```
+
+Untuk masuk sebagai admin dari versi online, klik tombol `Login sebagai admin` atau buka:
+
+```text
+https://rpzfuu.github.io/Classroom-Availability-System/admin-login.html
+```
+
+### Lokal
+
+Jika ingin menjalankan melalui web server lokal, pastikan folder project berada di direktori web server. Pada konfigurasi lokal sebelumnya:
 
 ```text
 C:\nginx\html\CAS
@@ -71,7 +95,7 @@ http://localhost/CAS/admin-login.html
 
 ## Cara Menggunakan
 
-1. Buka `http://localhost/CAS/` untuk melihat status ruangan.
+1. Buka `https://rpzfuu.github.io/Classroom-Availability-System/` untuk melihat status ruangan.
 2. Klik `Login sebagai admin`.
 3. Masukkan username `admin` dan password `admin`.
 4. Klik ikon pada kotak ruangan untuk mengubah status:

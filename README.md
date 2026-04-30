@@ -1,5 +1,7 @@
 # Classroom Availability System (CAS)
 
+**Language:** **ID** | [EN](readme_en.md)
+
 Classroom Availability System (CAS) adalah aplikasi web statis untuk menampilkan dan mengelola status ketersediaan ruangan kelas/laboratorium. Halaman publik dapat melihat status ruangan secara read-only, sedangkan admin dapat login dan mengubah status ruangan menjadi `Available` atau `Filled`.
 
 ## Live Demo

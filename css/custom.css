@@ -1,0 +1,48 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+.bg-utama {
+  background-color: #6c737e;
+}
+.bg-satunya {
+  background-color: #dfedfe;
+}
+.bg-satunyalagi {
+  background: #b5cfd8;
+}
+footer {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.kotak {
+  width: 121px;
+  height: 121px;
+  border-style: solid;
+  border: 5px solid #a3a3a3;
+  background-color: white;
+}
+.kotakmerah {
+  width: 121px;
+  height: 121px;
+  border-style: solid;
+  border: 5px solid #be5a5a;
+  background-color: #ffadad;
+}
+.kotakmerah p {
+  padding-top: 85px;
+}
+.kotak p {
+  padding-top: 85px;
+}
+table {
+  border-radius: 10px;
+}
+td {
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 150px;
+}
+td p {
+  width: 121px;
+  text-align: center;
+}

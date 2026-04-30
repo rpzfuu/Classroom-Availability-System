@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CAS - Panel Admin</title>
+  </head>
+  <body data-page="admin">
+    <div class="container-fluid">
+      <div class="container-xxl">
+        <header><h1>CLASSROOM AVAILABILITY SYSTEM</h1></header>
+
+        <nav class="row">
+          <div class="col">
+            <button
+              class="btn bg-secondary text-white logout-button"
+              type="button"
+              data-logout-button
+            >
+              Logout
+            </button>
+          </div>
+          <div class="col text-center">
+            <h3 data-cas-clock></h3>
+          </div>
+        </nav>
+
+        <section class="row">
+          <div class="col">
+            <h3><img src="img/building.png" alt="" />BUILDING A</h3>
+          </div>
+          <div class="col">
+            <h3><img src="img/building.png" alt="" />BUILDING B</h3>
+          </div>
+        </section>
+
+        <section class="row">
+          <div class="col">
+            <table class="bg-satunya">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="kotak" id="kotaka1" data-room-id="a1">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttona1"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imga1"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>ICT 1 LAB</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotaka2" data-room-id="a2">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttona2"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imga2"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>ICT 2 LAB</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotaka3" data-room-id="a3">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttona3"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imga3"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>SCIENCE LAB</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="kotak" id="kotaka4" data-room-id="a4">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttona4"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imga4"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>MATH LAB</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotaka5" data-room-id="a5">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttona5"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imga5"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>BIO LAB</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotaka6" data-room-id="a6">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttona6"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imga6"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>NET LAB</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="kotak" id="kotaka7" data-room-id="a7">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttona7"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imga7"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>COMPUTING LAB</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotaka8" data-room-id="a8">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttona8"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imga8"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>MINING ROOM</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotaka9" data-room-id="a9">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttona9"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imga9"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>SI ROOM</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col">
+            <table class="bg-satunya">
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="kotak" id="kotakb1" data-room-id="b1">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttonb1"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imgb1"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>1ST FLOOR ROOM 1</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotakb2" data-room-id="b2">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttonb2"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imgb2"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>1ST FLOOR ROOM 2</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotakb3" data-room-id="b3">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttonb3"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imgb3"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>1ST FLOOR ROOM 3</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="kotak" id="kotakb4" data-room-id="b4">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttonb4"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imgb4"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>2ND FLOOR ROOM 1</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotakb5" data-room-id="b5">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttonb5"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imgb5"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>2ND FLOOR ROOM 2</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotakb6" data-room-id="b6">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttonb6"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imgb6"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>2ND FLOOR ROOM 3</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="kotak" id="kotakb7" data-room-id="b7">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttonb7"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imgb7"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>3RD FLOOR ROOM 1</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotakb8" data-room-id="b8">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttonb8"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imgb8"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>3RD FLOOR ROOM 2</p>
+                  </td>
+                  <td>
+                    <div class="kotak" id="kotakb9" data-room-id="b9">
+                      <button
+                        class="btn float-end border-0"
+                        id="buttonb9"
+                        type="button"
+                        data-toggle-room
+                      >
+                        <img
+                          src="img/check.png"
+                          alt="Available"
+                          id="imgb9"
+                          data-status-icon
+                        />
+                      </button>
+                      <p class="text-center" data-status-text>Available</p>
+                    </div>
+                    <p data-room-name>3RD FLOOR ROOM 3</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h3>
+            <img src="img/map.png" alt="" />Location : Faculty Of Science and
+            Technologies, University of Jambi
+          </h3>
+        </section>
+      </div>
+      <footer class="text-center bg-utama text-white">
+        <h2>Copyright CAS 2023</h2>
+      </footer>
+    </div>
+    <script src="js/classroom-availability.js"></script>
+  </body>
+</html>
